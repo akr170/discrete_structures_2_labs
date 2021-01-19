@@ -1,0 +1,15 @@
+This assignment focuses on basic set operations in C++.  Your submission should consist of a single C++ source code file named Lab1main.cpp.  Your program must compile and execute on the PCC linux environment used for this class.  Your program should start by printing out your name.
+
+Instructions
+Write a C++ program that does the following:
+
+Prompts the user for,  and accepts a list of elements on a single line (separated by spaces).  The elements are strings (with no embedded spaces).  This is set A.  
+Prompts the user for,  and accepts a second list of elements on a single line (separated by spaces). The elements are strings (with no embedded spaces).  This is set B.  Sets A and B will contain no more than 25 elements each. 
+Display each of the following. 
+The cardinality and roster of the intersection of A and B
+The cardinality and roster of the union of A and B
+The cardinality and roster of the relative complement of A and B (i.e. A - B)
+The cardinality and roster of the relative complement of B and A (i.e. B - A)
+The cardinality and roster of the cross product of A and B
+The cardinality of the power set of the cross product of A and B (just the cardinality, not the roster.)
+Do not use any C++ libraries to implement the intersection ,union, difference etc. operations.  You must write your own routines for these.  You can use the C++ library for strings.
