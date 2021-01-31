@@ -1,0 +1,9 @@
+This assignment focuses on cryptography  Your submission should consist of a single C++ source code file named Lab2main.cpp.  Your program must compile and execute on the PCC linux environment used for this class.
+
+Instructions
+
+In this lab, use the technique on page 531 (485 in the 4th edition)  to calculate the residue of an integer of the form an.  Your program should prompt the user for a, and n and the modulus.   Your program will then print out the residue.  The program should loop through 4 times so that I can test it with 4 different values of a,  n and the modulus..  You must use the technique on page 531 for this program.  Use the long long type for intermediate results since raising even small numbers to powers can result in very large numbers.  You must use the long long type here. 
+
+You can test your code for small numbers and exponents using the C++ modulo (%) but for larger numbers you will not get correct answers as the numbers will be too big.  Use the examples in the book to check your code for larger numbers.  
+
+See the Lab 2 Notes below for more information on implementing the technique described in the book.
