@@ -1,0 +1,40 @@
+This assignments a continuation of lab 2.    Your submission should consist of a single C++ source code file named Lab3main.cpp.  Your program must compile and execute on the PCC linux environment used for this class.
+
+Instructions
+
+For lab 3, write a program to decode a message using public key cryptography based on the RSA cipher.  Use the code you wrote in Lab2 to calculate the residues.  
+
+The input  will be a list of 1, 2 or 3 digit numbers with spaces in between  Each number will correspond to an ASCII character.   The list may contain up to 100 numbers.  
+
+Your program should accept a command line argument (see file below) that is the name of the file where the encrypted message is stored.  In other words, I will test the program by invoking the following command:
+
+>yourprog testfile
+
+The output of this program will be your name followed by  the decrypted message.  Decrypt the message using the formula M =C d mod pq.  The parameters needed to do this are specified in the beginning of the test file.
+
+The decoded message will be the ASCII characters corresponding to the decimal values calculated using the formula above.   The messages are all somewhat famous quotes followed by the name of the person who said them.  
+
+Your program should print out the decoded message.  Make sure there are no extraneous characters.  
+
+You can access a number of test files on the Linux server (although the file I will test the program with is not there)  in the following directory:
+
+/home/inst/deborah.neft/CS251TestFiles
+
+
+========================================================================================================================
+
+This explains how to use command-line arguments in your C++  program. Suppose a user types this to the Unix command line:
+
+> programName abc def 123
+
+You can write code that will retrieve the number of arguments that were typed and the value of each one. In this case, the number of arguments is 4 ("programName" counts as one of the arguments), and you get the value of each argument as a C++ string. So, for instance, the 4th argument is a C++ string with the value "123".
+
+In order to access these command-line arguments, code main() like this:
+
+    main (int argc, char **argv)
+    {
+        ...
+    }
+The variable argc contains the number of arguments (including the program name).  And argv is a pointer to an array of pointers. Each pointer in that array points to a  string containing the corresponding argument. (argv can also be coded like this: char *argv[]. The two forms of argv are equivalent.)
+
+In the example above, argc will be 4, argv[0] will be "programName", argv[1] will be "abc", argv[2] will be "def", and argv[3] will be "123". Note that 123 is passed as a string, not as a number.
