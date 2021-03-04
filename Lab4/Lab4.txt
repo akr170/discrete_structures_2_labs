@@ -1,0 +1,7 @@
+ We won't be covering the Prim algorithm until next week but you can start writing the code to read in the matrix from the input line.  After you read in the matrix, print it out so I can make sure that you read it in correctly. 
+
+Do not ask the user for the size of the matrix.  The only thing you should prompt the user is to enter the WAM, as shown in the lab 4 details.  You can assume that there are no more than 10 vertices.
+
+You can type the WAM into a file and use the "<" symbol to redirect the input from  the file (instead of the console).  The command to do this would look like:
+
+>./myprog < WAMfile
